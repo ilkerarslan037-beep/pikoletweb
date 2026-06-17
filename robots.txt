@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://pikolet.com/sitemap.xml
+Sitemap: https://www.pikolet.com/sitemap.xml
