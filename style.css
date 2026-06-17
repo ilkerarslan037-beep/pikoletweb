@@ -7,6 +7,12 @@ body {
     sans-serif;
 }
 
+.hero-storefront-bg {
+  background-image: url("assets/storefront-opt.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
 /* Navbar links */
 .nav-link {
   position: relative;

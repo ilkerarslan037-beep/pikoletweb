@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pikolet Menü | Kokoreç ve Izgara Köfte Fiyatları</title>
-  <meta name="description" content="Pikolet güncel menü: kokoreç, ızgara köfte ve midye dolma fiyatları. Ankara Çankaya Maltepe." />
+  <meta name="description" content="Pikolet güncel menü: kokoreç, ızgara köfte, sebzeli tavuk ve midye dolma fiyatları. Ankara Çankaya Maltepe." />
   <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#ea580c" />
   <link rel="canonical" href="https://pikolet.com/menu.html" />
@@ -26,15 +26,11 @@
   <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
 
-  <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- Custom CSS -->
+  <link rel="stylesheet" href="tailwind.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body class="bg-zinc-900 text-gray-100 font-inter">
@@ -100,15 +96,15 @@
           <div class="space-y-3">
             <div class="flex items-center justify-between border-b border-zinc-800 pb-2">
               <p class="menu-item-title">Tam Ekmek</p>
-              <span class="menu-price">₺420</span>
+              <span class="menu-price">₺540</span>
             </div>
             <div class="flex items-center justify-between border-b border-zinc-800 pb-2">
               <p class="menu-item-title">Yarım Ekmek</p>
-              <span class="menu-price">₺320</span>
+              <span class="menu-price">₺400</span>
             </div>
             <div class="flex items-center justify-between">
               <p class="menu-item-title">Çeyrek Ekmek</p>
-              <span class="menu-price">₺170</span>
+              <span class="menu-price">₺200</span>
             </div>
           </div>
         </article>
@@ -124,30 +120,51 @@
           <div class="space-y-3">
             <div class="flex items-center justify-between border-b border-zinc-800 pb-2">
               <p class="menu-item-title">Tam Ekmek</p>
-              <span class="menu-price">₺380</span>
+              <span class="menu-price">₺490</span>
             </div>
             <div class="flex items-center justify-between border-b border-zinc-800 pb-2">
               <p class="menu-item-title">Yarım Ekmek</p>
-              <span class="menu-price">₺290</span>
+              <span class="menu-price">₺350</span>
             </div>
             <div class="flex items-center justify-between">
               <p class="menu-item-title">Çeyrek Ekmek</p>
-              <span class="menu-price">₺260</span>
+              <span class="menu-price">₺200</span>
             </div>
           </div>
         </article>
-      </div>
 
-      <article class="menu-card max-w-xl">
-        <div class="flex items-center justify-between">
-          <h2 class="section-title">Midye Dolma</h2>
-          <span class="menu-price">₺12</span>
-        </div>
-        <div class="overflow-hidden rounded-xl border border-zinc-800 my-4">
-          <img src="assets/midye-opt.jpg" alt="Midye dolma" class="menu-card-image" loading="lazy" decoding="async" />
-        </div>
-        <p class="menu-desc">Adet fiyatıdır. Taze limonla servis edilir.</p>
-      </article>
+        <article class="menu-card">
+          <div class="flex items-center justify-between mb-3">
+            <h2 class="section-title">Sebzeli Tavuk</h2>
+            <span class="badge">18:00'e kadar</span>
+          </div>
+          <div class="overflow-hidden rounded-xl border border-zinc-800 mb-4">
+            <img src="assets/sebzeli-tavuk-opt.jpg" alt="Sebzeli tavuk ekmek" class="menu-card-image" loading="lazy" decoding="async" />
+          </div>
+          <div class="space-y-3">
+            <div class="flex items-center justify-between border-b border-zinc-800 pb-2">
+              <p class="menu-item-title">Tam Ekmek</p>
+              <span class="menu-price">₺220</span>
+            </div>
+            <div class="flex items-center justify-between">
+              <p class="menu-item-title">Yarım Ekmek</p>
+              <span class="menu-price">₺160</span>
+            </div>
+          </div>
+          <p class="menu-desc mt-3">Günlük olarak saat 18:00'e kadar servis edilir.</p>
+        </article>
+
+        <article class="menu-card">
+          <div class="flex items-center justify-between">
+            <h2 class="section-title">Midye Dolma</h2>
+            <span class="menu-price">₺15</span>
+          </div>
+          <div class="overflow-hidden rounded-xl border border-zinc-800 my-4">
+            <img src="assets/midye-opt.jpg" alt="Midye dolma" class="menu-card-image" loading="lazy" decoding="async" />
+          </div>
+          <p class="menu-desc">Adet fiyatıdır. Taze limonla servis edilir.</p>
+        </article>
+      </div>
     </section>
   </main>
 
@@ -175,7 +192,7 @@
   </a>
 
   <!-- Custom JS -->
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
 
