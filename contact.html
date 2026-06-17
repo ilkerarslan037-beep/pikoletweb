@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pikolet İletişim | Kokoreç &amp; Grill</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-zinc-900 text-gray-100 font-inter">
+  <!-- Navbar -->
+  <header class="sticky top-0 z-30 bg-zinc-950/95 backdrop-blur border-b border-zinc-800">
+    <nav class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+      <a href="index.html" class="flex items-center space-x-3">
+        <img src="assets/logo-opt.jpg" alt="Pikolet Logo" class="h-10 w-10 rounded-full object-cover border border-zinc-700" />
+        <span class="text-xl font-bold tracking-wide text-orange-500">Pikolet</span>
+        <span class="hidden sm:inline text-xs tracking-[0.22em] uppercase text-zinc-400">Kokoreç &amp; Köfte</span>
+      </a>
+
+      <div class="hidden md:flex items-center space-x-8 text-sm font-medium">
+        <a href="index.html" class="nav-link">Anasayfa</a>
+        <a href="menu.html" class="nav-link">Menü</a>
+        <a href="contact.html" class="nav-link nav-link-active">İletişim</a>
+      </div>
+
+      <button
+        id="mobile-menu-button"
+        class="md:hidden inline-flex items-center justify-center p-2 rounded-md text-zinc-300 hover:text-white hover:bg-zinc-800 focus:outline-none focus:ring-2 focus:ring-orange-500"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <span class="sr-only">Menüyü aç</span>
+        <svg class="h-6 w-6" id="icon-menu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+        <svg class="h-6 w-6 hidden" id="icon-close" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </nav>
+
+    <div id="mobile-menu" class="md:hidden hidden border-t border-zinc-800 bg-zinc-950/98">
+      <div class="px-4 pt-2 pb-4 space-y-1 text-sm font-medium">
+        <a href="index.html" class="mobile-nav-link">Anasayfa</a>
+        <a href="menu.html" class="mobile-nav-link">Menü</a>
+        <a href="contact.html" class="mobile-nav-link mobile-nav-link-active">İletişim</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="min-h-screen">
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-10">
+      <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
+        <div>
+          <h1 class="text-2xl sm:text-3xl font-extrabold tracking-tight text-white mb-2">
+            İletişim &amp; Çalışma Saatleri
+          </h1>
+          <p class="text-sm sm:text-base text-zinc-300 max-w-xl">
+            Adres ve iletişim bilgilerimiz aşağıda. Gece lezzetinin adresi
+            Pikolet, Ankara’nın tam kalbinde.
+          </p>
+        </div>
+        <div class="text-xs sm:text-sm text-zinc-400">
+          <p class="flex items-center space-x-2">
+            <span class="inline-flex h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+            <span>Yoğun saatlerde telefonla bilgi alabilirsiniz.</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-10">
+        <!-- Info -->
+        <div class="space-y-6">
+          <div class="info-card">
+            <h2 class="text-sm font-semibold text-zinc-100 mb-2">
+              Çalışma Saatleri
+            </h2>
+            <dl class="text-sm text-zinc-300 space-y-1.5">
+              <div class="flex justify-between">
+                <dt>Her Gün</dt>
+                <dd>11:30 – 03:30</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="info-card">
+            <h2 class="text-sm font-semibold text-zinc-100 mb-2">
+              İletişim Bilgileri
+            </h2>
+            <dl class="text-sm text-zinc-300 space-y-1.5">
+              <div>
+                <dt class="text-xs uppercase tracking-[0.22em] text-zinc-500">
+                  Telefon
+                </dt>
+                <dd>
+                  <a href="tel:+903122294062" class="hover:text-orange-400 transition-colors">
+                    (0312) 229 40 62
+                  </a>
+                </dd>
+              </div>
+              <div>
+                <dt class="text-xs uppercase tracking-[0.22em] text-zinc-500 mt-2">
+                  Adres
+                </dt>
+                <dd>
+                  Maltepe, Gençlik Cd. 101 C,<br />
+                  06570 Çankaya/Ankara
+                </dd>
+              </div>
+              <div>
+                <dt class="text-xs uppercase tracking-[0.22em] text-zinc-500 mt-2">
+                  Instagram
+                </dt>
+                <dd>
+                  <a href="https://instagram.com/pikolet_piknik" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 hover:text-orange-400 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-4 w-4 text-orange-400" fill="currentColor" aria-hidden="true">
+                      <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2Zm8.5 1.5h-8.5A4.25 4.25 0 0 0 3.5 7.75v8.5a4.25 4.25 0 0 0 4.25 4.25h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5a4.25 4.25 0 0 0-4.25-4.25ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.5A3.5 3.5 0 1 0 12 15.5 3.5 3.5 0 0 0 12 8.5Zm5.25-2a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5Z"/>
+                    </svg>
+                    <span>@pikolet_piknik</span>
+                  </a>
+                </dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="info-card" style="border-style: dashed;">
+            <h2 class="text-sm font-semibold text-zinc-100 mb-2">
+              Not
+            </h2>
+            <p class="text-sm text-zinc-300">
+              Menü ve fiyatlar dönemsel olarak güncellenebilmektedir. Güncel
+              bilgiler için doğrudan bizimle iletişime geçmenizi öneririz.
+            </p>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div>
+          <div class="info-card">
+            <h2 class="text-sm font-semibold text-zinc-100 mb-3">
+              Mesaj Gönder
+            </h2>
+            <form action="#" method="post" class="space-y-4">
+              <div>
+                <label for="name" class="form-label">Ad Soyad</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="form-input"
+                  placeholder="Adınızı ve soyadınızı girin"
+                  required
+                />
+              </div>
+              <div>
+                <label for="phone" class="form-label">Telefon</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  class="form-input"
+                  placeholder="0 5xx xxx xx xx"
+                />
+              </div>
+              <div>
+                <label for="message" class="form-label">Mesajınız</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  class="form-input resize-none"
+                  placeholder="Sorularınız için mesajınızı yazın..."
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn-primary w-full sm:w-auto">
+                Mesajı Gönder
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Map -->
+      <div class="space-y-3">
+        <div class="flex items-center justify-between">
+          <div>
+            <h2 class="section-title">Konum</h2>
+            <p class="section-subtitle">Ankara’nın kalbinde.</p>
+          </div>
+        </div>
+        <div class="overflow-hidden rounded-2xl border border-zinc-800 shadow-xl bg-zinc-950">
+          <!-- Placeholder Google Maps iframe for Ankara -->
+          <iframe
+            title="Pikolet Konum - Ankara"
+            src="https://www.google.com/maps?q=Maltepe%2C%20Gen%C3%A7lik%20Cd.%20101%20C%2C%2006570%20%C3%87ankaya%2FAnkara&output=embed"
+            width="100%"
+            height="320"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-zinc-800 bg-black/90">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-center gap-4 text-xs sm:text-sm text-zinc-400">
+      <p>© <span id="year"></span> Pikolet</p>
+    </div>
+  </footer>
+
+  <a
+    href="tel:+903122294062"
+    class="call-fab"
+    aria-label="Pikolet'i ara: (0312) 229 40 62"
+    title="Hemen ara"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24 11.36 11.36 0 0 0 3.56.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.36 11.36 0 0 0 .57 3.56 1 1 0 0 1-.25 1.01l-2.2 2.22Z"/>
+    </svg>
+    <span class="call-fab-label">Ara</span>
+  </a>
+
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>
+
