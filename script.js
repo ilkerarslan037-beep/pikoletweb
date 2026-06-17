@@ -41,5 +41,29 @@
       el.textContent = year;
     });
   }
+
+  // Load Google Maps only when user requests it
+  const mapContainer = document.getElementById("map-container");
+  const mapPlaceholder = document.getElementById("map-placeholder");
+  const loadMapBtn = document.getElementById("load-map-btn");
+
+  if (mapContainer && mapPlaceholder && loadMapBtn) {
+    const loadMap = () => {
+      const mapSrc = mapContainer.getAttribute("data-map-src");
+      if (!mapSrc || mapContainer.querySelector("iframe")) return;
+
+      const iframe = document.createElement("iframe");
+      iframe.title = "Pikolet Konum - Ankara";
+      iframe.src = mapSrc;
+      iframe.loading = "lazy";
+      iframe.referrerPolicy = "no-referrer-when-downgrade";
+      iframe.allowFullscreen = true;
+
+      mapPlaceholder.remove();
+      mapContainer.appendChild(iframe);
+    };
+
+    loadMapBtn.addEventListener("click", loadMap);
+  }
 })();
 

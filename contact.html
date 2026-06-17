@@ -215,18 +215,26 @@
             <p class="section-subtitle">Ankara’nın kalbinde.</p>
           </div>
         </div>
-        <div class="overflow-hidden rounded-2xl border border-zinc-800 shadow-xl bg-zinc-950">
-          <!-- Placeholder Google Maps iframe for Ankara -->
-          <iframe
-            title="Pikolet Konum - Ankara"
-            src="https://www.google.com/maps?q=Maltepe%2C%20Gen%C3%A7lik%20Cd.%20101%20C%2C%2006570%20%C3%87ankaya%2FAnkara&output=embed"
-            width="100%"
-            height="320"
-            style="border:0;"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+        <div class="overflow-hidden rounded-2xl border border-zinc-800 shadow-xl bg-zinc-950 map-container" id="map-container" data-map-src="https://www.google.com/maps?q=Maltepe%2C%20Gen%C3%A7lik%20Cd.%20101%20C%2C%2006570%20%C3%87ankaya%2FAnkara&output=embed">
+          <div class="map-placeholder" id="map-placeholder">
+            <svg class="map-placeholder-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/>
+            </svg>
+            <p class="map-placeholder-address">
+              Maltepe, Gençlik Cd. 101 C, 06570 Çankaya/Ankara
+            </p>
+            <button type="button" class="btn-primary" id="load-map-btn">
+              Haritayı Göster
+            </button>
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Pikolet+Kokore%C3%A7+Maltepe+Gen%C3%A7lik+Cd+Ankara"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="map-open-link"
+            >
+              Google Maps'te aç →
+            </a>
+          </div>
         </div>
       </div>
     </section>

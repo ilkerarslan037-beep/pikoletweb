@@ -298,6 +298,55 @@ body {
   }
 }
 
+/* Map lazy load */
+.map-container {
+  min-height: 320px;
+  position: relative;
+}
+
+.map-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  min-height: 320px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  background: linear-gradient(160deg, rgba(24, 24, 27, 0.95), rgba(9, 9, 11, 0.98));
+}
+
+.map-placeholder-icon {
+  width: 3rem;
+  height: 3rem;
+  color: rgb(249 115 22);
+}
+
+.map-placeholder-address {
+  font-size: 0.9rem;
+  color: rgb(212 212 216);
+  max-width: 22rem;
+  line-height: 1.5;
+}
+
+.map-open-link {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: rgb(251 146 60);
+  transition: color 0.15s ease;
+}
+
+.map-open-link:hover {
+  color: rgb(253 186 116);
+}
+
+.map-container iframe {
+  display: block;
+  width: 100%;
+  height: 320px;
+  border: 0;
+}
+
 /* Screen-reader only (if needed) */
 .sr-only {
   position: absolute;
