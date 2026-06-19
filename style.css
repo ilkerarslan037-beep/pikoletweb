@@ -13,6 +13,24 @@ body {
   background-position: center;
 }
 
+.hero-grid .hero-image-block {
+  order: 1;
+}
+
+.hero-grid .hero-text-block {
+  order: 2;
+}
+
+@media (min-width: 1024px) {
+  .hero-grid .hero-text-block {
+    order: 1;
+  }
+
+  .hero-grid .hero-image-block {
+    order: 2;
+  }
+}
+
 /* Navbar links */
 .nav-link {
   position: relative;
