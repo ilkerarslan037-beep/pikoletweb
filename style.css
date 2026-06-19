@@ -13,21 +13,50 @@ body {
   background-position: center;
 }
 
-.hero-grid .hero-image-block {
+.hero-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.hero-left {
+  display: contents;
+}
+
+.hero-intro {
   order: 1;
 }
 
-.hero-grid .hero-text-block {
+.hero-image-block {
   order: 2;
 }
 
+.hero-cta {
+  order: 3;
+}
+
 @media (min-width: 1024px) {
-  .hero-grid .hero-text-block {
-    order: 1;
+  .hero-grid {
+    display: grid;
+    grid-template-columns: repeat(11, minmax(0, 1fr));
+    gap: 2.5rem;
+    align-items: center;
   }
 
-  .hero-grid .hero-image-block {
-    order: 2;
+  .hero-left {
+    display: flex;
+    flex-direction: column;
+    grid-column: span 5 / span 5;
+  }
+
+  .hero-intro,
+  .hero-image-block,
+  .hero-cta {
+    order: unset;
+  }
+
+  .hero-image-block {
+    grid-column: span 6 / span 6;
   }
 }
 
